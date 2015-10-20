@@ -1,0 +1,79 @@
+﻿@model AppMVC.Models.ClientesModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>buscar</title>
+</head>
+<body>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Nombre)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Nombre)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Apellido)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Apellido)
+    </div>
+
+    <div class="editor-label">
+       @Html.LabelFor(model => model.Domicilio)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Domicilio)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Localidad)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Localidad)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Cuil)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Cuil)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Telpar)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Telpar)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Telcel)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Telcel)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.email)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Observa)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Observa)
+    </div>
+
+</body>
+</html>

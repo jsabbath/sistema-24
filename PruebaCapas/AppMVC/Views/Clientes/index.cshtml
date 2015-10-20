@@ -1,0 +1,110 @@
+﻿@model AppMVC.Models.ClientesModel
+
+@{
+    ViewBag.Title = "Búsqueda de Clientes";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Buscar", "Clientes", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Siniestro</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IDCliente)
+        </div>
+        
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IDCliente)
+            @Html.ValidationMessageFor(model => model.IDCliente)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nombre)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nombre)
+            @Html.ValidationMessageFor(model => model.Nombre)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Apellido)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Apellido)
+            @Html.ValidationMessageFor(model => model.Apellido)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Domicilio)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Domicilio)
+            @Html.ValidationMessageFor(model => model.Domicilio)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Localidad)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Localidad)
+            @Html.ValidationMessageFor(model => model.Localidad)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cuil)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cuil)
+            @*@Html.ValidationMessageFor(model => model.CUIL)*@
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Telpar)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Telpar)
+            @Html.ValidationMessageFor(model => model.Telpar)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Telcel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Telcel)
+            @Html.ValidationMessageFor(model => model.Telcel)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.email)
+            @Html.ValidationMessageFor(model => model.email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Observa)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Observa)
+            @Html.ValidationMessageFor(model => model.Observa)
+        </div>
+        
+
+
+
+        <p>
+            <input type="submit" value="Buscar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Volver", "Index")
+</div>
+
